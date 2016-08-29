@@ -47,28 +47,28 @@ public class Conjunto {
     	
         //Ingreso de desarrolladores
     	do{
-            nombre = System.out.println("Ingrese el nombre del desarrollador: ");
+            nombre = JOptionPane.showInputDialog("Ingrese el nombre del desarrollador: ");
             
             //experiencia java
-            experiencia = System.out.println((null,"¿Posee experiencia en Java?");
+            experiencia = JOptionPane.showConfirmDialog(null,"¿Posee experiencia en Java?");
             if(experiencia == 0){
                 java.add(nombre);
             }
             
             //experiencia Web
-            experiencia = System.out.println(null,"¿Posee experiencia en desarrollo Web?");
+            experiencia = JOptionPane.showConfirmDialog(null,"¿Posee experiencia en desarrollo Web?");
             if(experiencia == 0){
                 web.add(nombre);
             }
             
             //experiencia elulares
-            experiencia = System.out.println(null,"¿Posee experiencia en desarrollo de celulares?");
+            experiencia = JOptionPane.showConfirmDialog(null,"¿Posee experiencia en desarrollo de celulares?");
             if(experiencia == 0){
                 movil.add(nombre);
             }
             
             //ingresar otro desarrollador
-            opcion = System.out.println(null,"¿Desea ingresar otro desarrollador?");
+            opcion = JOptionPane.showConfirmDialog(null,"¿Desea ingresar otro desarrollador?");
         }while(opcion != 1);
     }
     
