@@ -1,4 +1,10 @@
-
+/**
+ * @author Gladys de la Roca, Jackeline Hidalgo
+ * Clase Conjunto
+ * Clase que crea ingresa desarrolladores y crea los conjuntos
+ * @version 29/08/2016
+ */
+ 
 import java.util.*;
 import javax.swing.*;
 
@@ -6,7 +12,7 @@ import javax.swing.*;
 public class Conjunto { 
 	
     //inicializacion de variables
-    private Factory factor = new Factory();
+    private Factory miFactory = new Factory();
     private int opcion; 
     private int experiencia;
     private Boolean subConjunto;
@@ -32,15 +38,15 @@ public class Conjunto {
                      + " desea usar:\n1) HashSet\n2) TreeSet\n3) LinkedHashSet"));
              }
         while(opcion < 0 && opcion > 4);
-        java = factor.getSet(opcion);
-        web = factor.getSet(opcion);
-        movil = factor.getSet(opcion);
-        res1 = factor.getSet(opcion);
-        res2 = factor.getSet(opcion);
-        res3 = factor.getSet(opcion);
-        res4 = factor.getSet(opcion);
-        res5 = factor.getSet(opcion);
-        res6 = factor.getSet(opcion);
+        java = miFactory.getSet(opcion);
+        web = miFactory.getSet(opcion);
+        movil = miFactory.getSet(opcion);
+        res1 = miFactory.getSet(opcion);
+        res2 = miFactory.getSet(opcion);
+        res3 = miFactory.getSet(opcion);
+        res4 = miFactory.getSet(opcion);
+        res5 = miFactory.getSet(opcion);
+        res6 = miFactory.getSet(opcion);
     }
     
     public void ingresarDesarrollador(){
@@ -105,7 +111,7 @@ public class Conjunto {
         }else{
         	esSubC = "No";
         }
-        System.out.println("Es el conjunto de desarrollores Java subconjunto de los desarrolladores Web?" + esSubC);
+        System.out.println("Es el conjunto de desarrollores Java subconjunto de los desarrolladores Web? " + esSubC);
         
         // 6 y 7
         
